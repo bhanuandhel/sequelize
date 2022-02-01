@@ -5,6 +5,7 @@ const {validations} = require('./validationController');
 const {RawQury} = require('./rawQueryController');
 const {OneToOne, belongsTo, OneToMany, manyToMany} = require('./oneToOneController');
 const {scopes} = require('./scopesController');
+const {oneToManyPolymorphic} = require('./polymorphicController');
 
 module.exports ={
     addUser,
@@ -19,5 +20,6 @@ module.exports ={
     belongsTo,
     OneToMany,
     manyToMany,
-    scopes
+    scopes,
+    oneToManyPolymorphic
 }

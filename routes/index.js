@@ -11,7 +11,8 @@ const {
   belongsTo,
   OneToMany,
   manyToMany,
-  scopes
+  scopes,
+  oneToManyPolymorphic
 
 } = require("../controllers");
 
@@ -28,5 +29,6 @@ module.exports = {
   belongsTo,
   OneToMany,
   manyToMany,
-  scopes
+  scopes,
+  oneToManyPolymorphic
 };
