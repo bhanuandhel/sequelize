@@ -6,6 +6,7 @@ const {RawQury} = require('./rawQueryController');
 const {OneToOne, belongsTo, OneToMany, manyToMany} = require('./oneToOneController');
 const {scopes} = require('./scopesController');
 const {oneToManyPolymorphic} = require('./polymorphicController');
+const {LazyLoading, EagerLoading} = require('./lazyLoadingController');
 
 module.exports ={
     addUser,
@@ -21,5 +22,7 @@ module.exports ={
     OneToMany,
     manyToMany,
     scopes,
-    oneToManyPolymorphic
+    oneToManyPolymorphic,
+    LazyLoading,
+    EagerLoading
 }

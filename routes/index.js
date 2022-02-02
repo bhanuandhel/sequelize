@@ -12,7 +12,9 @@ const {
   OneToMany,
   manyToMany,
   scopes,
-  oneToManyPolymorphic
+  oneToManyPolymorphic,
+  LazyLoading,
+  EagerLoading
 
 } = require("../controllers");
 
@@ -30,5 +32,7 @@ module.exports = {
   OneToMany,
   manyToMany,
   scopes,
-  oneToManyPolymorphic
+  oneToManyPolymorphic,
+  LazyLoading,
+  EagerLoading
 };
