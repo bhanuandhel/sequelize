@@ -5,6 +5,7 @@ const Tags = require('./tags');
 const Image = require('./image');
 const Video = require('./video');
 const Comment = require('./comment');
+const Employees = require('./Employees');
 
 //////// scopes /////////
 
@@ -42,7 +43,9 @@ Users.addScope('limitCheck',{
 
 ////////// one to many ///////
 // Users.hasMany(Posts, {foreignKey: 'user_id', as:'PostDetail'})
-Users.hasMany(Posts, {foreignKey: 'user_id'})
+// Users.hasMany(Posts, {foreignKey: 'user_id'})
+// no need to define foreignKey in here add. define (underscored:true) in posts models.
+Users.hasMany(Posts, {as:'PostDetail'})
 Posts.belongsTo(Users.scope('checkStatus'), {foreignKey: 'user_id', as:'UserInfo'}) // (post kis se belong kr rhi hai)
 
 ///////// Many to Many ////////
@@ -79,5 +82,6 @@ module.exports={
     Tags,
     Image,
     Video,
-    Comment
+    Comment,
+    Employees
 };
