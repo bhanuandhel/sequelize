@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const sequelize = require('./utils/database');
-const {addUser,findUser, updateUser, deleteUser, finderOpration, setterGetter, validations, RawQury, OneToOne, belongsTo, OneToMany,manyToMany, scopes, oneToManyPolymorphic, LazyLoading, EagerLoading, paranoid} = require('./routes');
+const {addUser,findUser, updateUser, deleteUser, finderOpration, setterGetter, validations, RawQury, OneToOne, belongsTo, OneToMany,manyToMany, scopes, oneToManyPolymorphic, LazyLoading, EagerLoading, paranoid, Transations} = require('./routes');
 
 const port = 4000;
 
@@ -31,6 +31,7 @@ app.get("/one-to-many-polymorphic", oneToManyPolymorphic);
 app.get("/lazy-loading", LazyLoading);
 app.get("/eager-loading", EagerLoading);
 app.get("/paranoid", paranoid);
+app.get("/transations", Transations);
 
 app.listen(port, () => {
   console.log(`App is listing at http://localhost:${port}`);

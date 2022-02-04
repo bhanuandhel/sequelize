@@ -15,7 +15,8 @@ const {
   oneToManyPolymorphic,
   LazyLoading,
   EagerLoading,
-  paranoid
+  paranoid,
+  Transations
 
 } = require("../controllers");
 
@@ -36,5 +37,6 @@ module.exports = {
   oneToManyPolymorphic,
   LazyLoading,
   EagerLoading,
-  paranoid
+  paranoid,
+  Transations
 };
