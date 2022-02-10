@@ -16,7 +16,8 @@ const {
   LazyLoading,
   EagerLoading,
   paranoid,
-  Transations
+  Transations,
+  Hooks
 
 } = require("../controllers");
 
@@ -38,5 +39,6 @@ module.exports = {
   LazyLoading,
   EagerLoading,
   paranoid,
-  Transations
+  Transations,
+  Hooks
 };

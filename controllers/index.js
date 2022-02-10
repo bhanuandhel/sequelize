@@ -9,6 +9,7 @@ const {oneToManyPolymorphic} = require('./polymorphicController');
 const {LazyLoading, EagerLoading} = require('./lazyLoadingController');
 const {paranoid} = require('./paranoidController');
 const {Transations} = require('./TransationController');
+const {Hooks} = require('./HooksController');
 
 module.exports ={
     addUser,
@@ -28,5 +29,6 @@ module.exports ={
     LazyLoading,
     EagerLoading,
     paranoid,
-    Transations
+    Transations,
+    Hooks
 }

@@ -42,6 +42,15 @@ const Users = sequelize.define("users", {
         // updatedAt: 'update_at',
         // engine: 'MYISAM',
         // tableName:'userdata'
+        hooks:{
+            beforeValidate:(user, options)=>{
+                // console.log("yes hooks called");
+                user.name='dummy test data'
+            },
+            afterValidate:(user, options)=>{
+                // user.name="ramesh"
+            }
+        }
 
     }
     );
